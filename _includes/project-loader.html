@@ -1,0 +1,42 @@
+{% assign lang = page.lang | default: site.default_lang %}
+
+{% if include.type == 'current' %}
+  {% assign projects_data_file = site.data.projects[lang | append: '_current_projects'] %}
+{% elsif include.type == 'portfolio' %}
+  {% assign projects_data_file = site.data.projects[lang | append: '_portfolio_projects'] %}
+{% endif %}
+
+<div class="row g-4" id="{{ include.container_id }}">
+  {% for project in projects_data_file %}
+    <div class="col-md-6 col-lg-4 project-card">
+      <div class="card h-100">
+        <div class="card-img-top img-responsive img-responsive-16by9" style="background-image: url({{ project.image | relative_url }})"></div>
+        <div class="card-body">
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <span class="badge bg-{{ include.badge_color | default: 'primary' }}">{{ project.category }}</span>
+            <span class="text-muted small">{{ project.startDate | slice: 0, 4 }}</span>
+          </div>
+          <h3 class="card-title">{{ project.name }}</h3>
+          <p class="text-muted">{{ project.description }}</p>
+          
+          {% if include.type == 'current' %}
+            <div class="progress" style="height: 20px; margin-top: 10px;">
+              <div class="progress-bar" role="progressbar" style="width: {{ project.progress }}%" aria-valuenow="{{ project.progress }}" aria-valuemin="0" aria-valuemax="100">
+                {{ project.progress }}%
+              </div>
+            </div>
+          {% endif %}
+        </div>
+        <div class="card-footer bg-transparent border-0">
+          <a href="{{ project.url }}" class="btn btn-outline-primary w-100" target="_blank">
+            {% if lang == 'it' %}
+              Vai al progetto
+            {% else %}
+              Go to project
+            {% endif %}
+          </a>
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+</div>

@@ -1,0 +1,61 @@
+# English translations
+site:
+  title: "DoDa e-Agency"
+  description: "The first Open Source Web agency using DaDoOS, an AI-native operating system designed to revolutionize the way we interact with technology."
+  
+navigation:
+  home: "Home"
+  about: "About Us"
+  services: "Services"
+  current_projects: "Current Projects"
+  portfolio: "Portfolio"
+  
+header:
+  notification: "You have an invitation from the web agency!"
+  language_selector: "Language"
+  
+hero:
+  title: "The future of human-machine interaction"
+  description: "DoDa e-Agency uses DaDoOS which is an AI-native operating system designed to revolutionize the way we interact with technology."
+  explore_projects: "Explore Projects"
+  learn_more: "Learn More"
+  
+features:
+  lam_title: "Large Action Model"
+  lam_description: "Our advanced AI model understands and automates complex software interactions."
+  interface_title: "Intuitive Interface"
+  interface_description: "Text, voice, and touch interaction for a simple and natural user experience."
+  privacy_title: "Advanced Privacy"
+  privacy_description: "Built-in privacy features, including incognito mode for passive browsing."
+  
+projects:
+  featured_title: "Featured Projects"
+  featured_description: "Discover our latest innovations in artificial intelligence"
+  learn_more: "Learn More"
+  
+cta:
+  title: "Ready to revolutionize your approach to technology?"
+  description: "Join us in developing the future of human-machine interaction"
+  explore_services: "Explore Services"
+  contact_us: "Contact Us"
+  
+contact:
+  title: "Contact Us"
+  name: "Name"
+  name_placeholder: "Your name"
+  email: "Email"
+  email_placeholder: "Your email"
+  subject: "Subject"
+  subject_placeholder: "Message subject"
+  message: "Message"
+  message_placeholder: "Your message"
+  send: "Send Message"
+  
+footer:
+  contribute: "Contribute on GitHub"
+  about: "About Us"
+  services: "Services"
+  contacts: "Contacts"
+  copyright: "Copyright © 2025 DoDa e-Agency"
+  privacy: "Privacy Policy"
+  terms: "Terms of Service"

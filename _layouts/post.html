@@ -1,0 +1,54 @@
+---
+layout: default
+---
+<div class="page-header d-print-none">
+  <div class="container-xl">
+    <div class="row g-2 align-items-center">
+      <div class="col">
+        <h2 class="page-title">
+          {{ page.title }}
+        </h2>
+        <div class="page-subtitle">
+          <div class="d-flex">
+            {% if page.author %}
+            <div class="me-3">
+              <i class="ti ti-user"></i> {{ page.author }}
+            </div>
+            {% endif %}
+            <div class="me-3">
+              <i class="ti ti-calendar"></i> {{ page.date | date: "%d/%m/%Y" }}
+            </div>
+            {% if page.categories %}
+            <div>
+              <i class="ti ti-tag"></i>
+              {% for category in page.categories %}
+                <span class="badge bg-blue-lt me-1">{{ category }}</span>
+              {% endfor %}
+            </div>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-body">
+  <div class="container-xl">
+    <div class="card card-lg">
+      <div class="card-body markdown">
+        {% if page.featured_image %}
+        <div class="mb-4">
+          <img src="{{ site.baseurl }}/{{ page.featured_image }}" alt="{{ page.title }}" class="img-fluid rounded">
+        </div>
+        {% endif %}
+        
+        {{ content }}
+      </div>
+    </div>
+    
+    {% if page.show_contact_form != false %}
+      {% include contact-form.html %}
+    {% endif %}
+  </div>
+</div>

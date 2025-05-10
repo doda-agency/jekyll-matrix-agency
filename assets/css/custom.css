@@ -1,0 +1,122 @@
+/* Custom CSS for agency website */
+
+/* Custom color variables */
+:root {
+  --rabbit-primary: #3498db;
+  --rabbit-secondary: #2c3e50;
+  --rabbit-accent: #e74c3c;
+}
+
+/* Custom header styling */
+.navbar-brand {
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+/* Custom card styling */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Project cards */
+.project-card .card-img-top {
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Custom footer styling */
+.footer {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+/* Hero section styling */
+.hero {
+  position: relative;
+  overflow: hidden;
+  padding: 5rem 0;
+}
+
+.hero h1 {
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+}
+
+.hero .btn {
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+}
+
+/* Features section styling */
+.icon-box {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: rgba(52, 152, 219, 0.1);
+  margin-bottom: 1.5rem;
+}
+
+/* Call to action styling */
+.btn-white {
+  background-color: #fff;
+  color: var(--rabbit-primary);
+  border-color: #fff;
+}
+
+.btn-white:hover {
+  background-color: #f8f9fa;
+  color: var(--rabbit-primary);
+  border-color: #f8f9fa;
+}
+
+.btn-outline-white {
+  color: #fff;
+  border-color: #fff;
+}
+
+.btn-outline-white:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+/* Badge styling */
+.badge {
+  padding: 0.5em 0.75em;
+  font-weight: 500;
+}
+
+/* Language selector styling */
+.language-selector {
+  display: flex;
+  align-items: center;
+}
+
+.language-selector .dropdown-item.active {
+  background-color: var(--rabbit-primary);
+  color: white;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .project-card .card-img-top {
+    height: 150px;
+  }
+  
+  .hero {
+    padding: 3rem 0;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+}

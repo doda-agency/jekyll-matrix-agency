@@ -1,0 +1,53 @@
+{% assign translations = site.data.translations[page.lang] %}
+
+<!-- Navbar -->
+<div class="navbar-expand-md">
+  <div class="collapse navbar-collapse" id="navbar-menu">
+    <div class="navbar navbar-light">
+      <div class="container-xl">
+        <ul class="navbar-nav">
+          <li class="nav-item {% if page.url contains '/index.html' or page.url == '/' %}active{% endif %}">
+            <a class="nav-link" href="{{ page.lang | default: site.default_lang | append: '/index.html' | relative_url }}">
+              <span class="nav-link-icon d-md-none d-lg-inline-block">
+                <i class="ti ti-home"></i>
+              </span>
+              <span class="nav-link-title">{{ translations.navigation.home }}</span>
+            </a>
+          </li>
+          <li class="nav-item {% if page.url contains '/about.html' %}active{% endif %}">
+            <a class="nav-link" href="{{ page.lang | default: site.default_lang | append: '/about.html' | relative_url }}">
+              <span class="nav-link-icon d-md-none d-lg-inline-block">
+                <i class="ti ti-users"></i>
+              </span>
+              <span class="nav-link-title">{{ translations.navigation.about }}</span>
+            </a>
+          </li>
+          <li class="nav-item {% if page.url contains '/services.html' %}active{% endif %}">
+            <a class="nav-link" href="{{ page.lang | default: site.default_lang | append: '/services.html' | relative_url }}">
+              <span class="nav-link-icon d-md-none d-lg-inline-block">
+                <i class="ti ti-tool"></i>
+              </span>
+              <span class="nav-link-title">{{ translations.navigation.services }}</span>
+            </a>
+          </li>
+          <li class="nav-item {% if page.url contains '/current-projects.html' %}active{% endif %}">
+            <a class="nav-link" href="{{ page.lang | default: site.default_lang | append: '/current-projects.html' | relative_url }}">
+              <span class="nav-link-icon d-md-none d-lg-inline-block">
+                <i class="ti ti-code"></i>
+              </span>
+              <span class="nav-link-title">{{ translations.navigation.current_projects }}</span>
+            </a>
+          </li>
+          <li class="nav-item {% if page.url contains '/portfolio.html' %}active{% endif %}">
+            <a class="nav-link" href="{{ page.lang | default: site.default_lang | append: '/portfolio.html' | relative_url }}">
+              <span class="nav-link-icon d-md-none d-lg-inline-block">
+                <i class="ti ti-briefcase"></i>
+              </span>
+              <span class="nav-link-title">{{ translations.navigation.portfolio }}</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

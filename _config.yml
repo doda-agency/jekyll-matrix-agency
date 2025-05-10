@@ -1,0 +1,50 @@
+# Site settings
+title: DoDa e-Agency
+email: info@doda-agency.com
+description: >-
+  La prima agenzia Web Open Source ad utilizzare DaDoOS, un sistema operativo AI-native 
+  progettato per rivoluzionare il modo in cui interagiamo con la tecnologia.
+baseurl: "/jekyll-matrix-agency" # the subpath of your site, e.g. /blog
+url: "https://doda-agency.github.io" # the base hostname & protocol for your site
+github_username: doda-agency
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .gitignore
+  - README.md
+
+# Collections
+collections:
+  posts:
+    output: true
+    permalink: /:collection/:path/
+
+# Multilingual settings
+languages: ["it", "en"]
+default_lang: "it"
+exclude_from_localization: ["assets", "images", "css", "js", "fonts"]
+parallel_localization: true
+
+# Tabler.io settings
+tabler_css: "https://cdn.jsdelivr.net/npm/@tabler/core@latest/dist/css/tabler.min.css"
+tabler_icons_css: "https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css"
+tabler_js: "https://cdn.jsdelivr.net/npm/@tabler/core@latest/dist/js/tabler.min.js"
+
+# Custom settings
+twitter_widgets_js: "https://platform.twitter.com/widgets.js"
+
+# Sass settings
+sass:
+  sass_dir: _sass
+  style: compressed

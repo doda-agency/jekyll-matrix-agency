@@ -1,0 +1,55 @@
+{% comment %}
+  Language switcher component that can be included anywhere on the site
+  
+  Usage:
+  {% include language-switcher.html %}
+  
+  Optional parameters:
+  - dropdown: true/false (default: true) - Whether to display as a dropdown
+  - button_class: CSS class for the button (default: "btn btn-sm")
+{% endcomment %}
+
+{% assign translations = site.data.translations[page.lang] %}
+{% assign dropdown = include.dropdown | default: true %}
+{% assign button_class = include.button_class | default: "btn btn-sm" %}
+
+{% if dropdown %}
+  <div class="dropdown">
+    <button class="btn dropdown-toggle {{ button_class }}" type="button" id="languageSwitcher" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="ti ti-language me-1"></i>
+      {% if page.lang == 'en' %}English{% endif %}
+      {% if page.lang == 'it' %}Italiano{% endif %}
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="languageSwitcher">
+      {% for lang in site.languages %}
+        {% assign current_page_name = page.name | split: '.' | first %}
+        {% if current_page_name == 'index' %}
+          {% assign lang_url = '/' | append: lang | append: '/index.html' %}
+        {% else %}
+          {% assign lang_url = '/' | append: lang | append: '/' | append: current_page_name | append: '.html' %}
+        {% endif %}
+        <li>
+          <a class="dropdown-item language-selector-link {% if lang == page.lang %}active{% endif %}" href="{{ lang_url | relative_url }}" data-lang="{{ lang }}">
+            {% if lang == 'en' %}English{% endif %}
+            {% if lang == 'it' %}Italiano{% endif %}
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+{% else %}
+  <div class="btn-group" role="group" aria-label="Language Switcher">
+    {% for lang in site.languages %}
+      {% assign current_page_name = page.name | split: '.' | first %}
+      {% if current_page_name == 'index' %}
+        {% assign lang_url = '/' | append: lang | append: '/index.html' %}
+      {% else %}
+        {% assign lang_url = '/' | append: lang | append: '/' | append: current_page_name | append: '.html' %}
+      {% endif %}
+      <a href="{{ lang_url | relative_url }}" class="btn {{ button_class }} language-selector-link {% if lang == page.lang %}btn-primary active{% else %}btn-outline-primary{% endif %}" data-lang="{{ lang }}">
+        {% if lang == 'en' %}EN{% endif %}
+        {% if lang == 'it' %}IT{% endif %}
+      </a>
+    {% endfor %}
+  </div>
+{% endif %}

@@ -1,0 +1,45 @@
+{% comment %}
+  Project card component that can be included anywhere on the site
+  
+  Usage:
+  {% include project-card.html 
+    title="Project Title" 
+    description="Project description" 
+    image="/path/to/image.jpg" 
+    category="Category" 
+    badge_color="primary" 
+    year="2025" 
+    url="/path/to/project" 
+    button_text="Learn More" 
+  %}
+{% endcomment %}
+
+{% assign translations = site.data.translations[page.lang] %}
+{% assign button_text = include.button_text | default: translations.projects.learn_more %}
+
+<div class="card h-100">
+  {% if include.image %}
+    <div class="card-img-top img-responsive img-responsive-16by9" style="background-image: url({{ include.image | relative_url }})"></div>
+  {% endif %}
+  <div class="card-body">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+      <span class="badge bg-{{ include.badge_color | default: 'primary' }}">{{ include.category }}</span>
+      {% if include.year %}
+        <span class="text-muted small">{{ include.year }}</span>
+      {% endif %}
+    </div>
+    <h3 class="card-title">{{ include.title }}</h3>
+    <p class="text-muted">{{ include.description }}</p>
+    
+    {% if include.progress %}
+      <div class="progress" style="height: 20px; margin-top: 10px;">
+        <div class="progress-bar" role="progressbar" style="width: {{ include.progress }}%" aria-valuenow="{{ include.progress }}" aria-valuemin="0" aria-valuemax="100">
+          {{ include.progress }}%
+        </div>
+      </div>
+    {% endif %}
+  </div>
+  <div class="card-footer bg-transparent border-0">
+    <a href="{{ include.url | relative_url }}" class="btn btn-outline-primary w-100">{{ button_text }}</a>
+  </div>
+</div>

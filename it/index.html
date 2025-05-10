@@ -1,0 +1,197 @@
+---
+layout: default
+title: DoDa e-Agency - OS AI-Native
+description: La prima agenzia Web Open Source ad utilizzare DaDoOS, un sistema operativo AI-native progettato per rivoluzionare il modo in cui interagiamo con la tecnologia.
+keywords: DoDa e-Agency, DaDoOS, AI, intelligenza artificiale, sistema operativo, Open Source, LAM, Large Action Model
+lang: it
+---
+
+{% assign translations = site.data.translations[page.lang] %}
+
+<!-- Hero Section -->
+<div class="hero bg-primary-subtle py-5">
+  <div class="container-xl">
+    <div class="row align-items-center g-4">
+      <div class="col-lg-6">
+        <h1 class="display-3 fw-bold mb-3">{{ translations.hero.title }}</h1>
+        <p class="fs-2 text-muted">{{ translations.hero.description }}</p>
+        <div class="mt-4">
+          <a href="{{ page.lang | append: '/current-projects.html' | relative_url }}" class="btn btn-primary btn-lg me-2">{{ translations.hero.explore_projects }}</a>
+          <a href="{{ page.lang | append: '/about.html' | relative_url }}" class="btn btn-outline-primary btn-lg">{{ translations.hero.learn_more }}</a>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="position-relative rounded">
+          <blockquote class="twitter-tweet" data-media-max-width="560"><p lang="en" dir="ltr">We&#39;re launching Computer Use in smolagents! 🥳<br><br>-&gt; As vision models become more capable, they become able to power complex agentic workflows. Especially Qwen-VL models, that support built-in grounding, i.e. ability to locate any element in an image by its coordinates, thus to… <a href="https://t.co/mI8MuWZkIS">pic.twitter.com/mI8MuWZkIS</a></p>&mdash; m_ric (@AymericRoucher) <a href="https://twitter.com/AymericRoucher/status/1919783847597670780?ref_src=twsrc%5Etfw">May 6, 2025</a></blockquote>
+          <div class="position-absolute top-0 end-0 p-3 bg-white rounded-3 shadow-lg" style="transform: translate(20%, -20%); max-width: 180px;">
+            <div class="d-flex align-items-center">
+              <i class="ti ti-robot fs-1 text-primary me-2"></i>
+              <div>
+                <div class="fw-bold">AI-Powered</div>
+                <div class="text-muted small">Interazione naturale</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Features Section -->
+<div class="container-xl py-5">
+  <div class="row g-4 text-center">
+    <div class="col-md-4">
+      <div class="card h-100 border-0 shadow-sm">
+        <div class="card-body">
+          <div class="icon-box mb-3">
+            <i class="ti ti-brain fs-1 text-primary"></i>
+          </div>
+          <h3 class="card-title">{{ translations.features.lam_title }}</h3>
+          <p class="text-muted">{{ translations.features.lam_description }}</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card h-100 border-0 shadow-sm">
+        <div class="card-body">
+          <div class="icon-box mb-3">
+            <i class="ti ti-device-mobile fs-1 text-primary"></i>
+          </div>
+          <h3 class="card-title">{{ translations.features.interface_title }}</h3>
+          <p class="text-muted">{{ translations.features.interface_description }}</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card h-100 border-0 shadow-sm">
+        <div class="card-body">
+          <div class="icon-box mb-3">
+            <i class="ti ti-shield-lock fs-1 text-primary"></i>
+          </div>
+          <h3 class="card-title">{{ translations.features.privacy_title }}</h3>
+          <p class="text-muted">{{ translations.features.privacy_description }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Featured Projects Section -->
+<div class="bg-light py-5">
+  <div class="container-xl">
+    <div class="row mb-4">
+      <div class="col-12">
+        <h2 class="text-center mb-4">{{ translations.projects.featured_title }}</h2>
+        <p class="text-center text-muted mb-5">{{ translations.projects.featured_description }}</p>
+      </div>
+    </div>
+    <div class="row g-4" id="projects-container">
+      <!-- Project cards will be dynamically loaded here -->
+      <div class="col-md-6 col-lg-4 project-card">
+        <div class="card h-100">
+          <div class="card-img-top img-responsive img-responsive-16by9" style="background-image: url({{ '/assets/images/hero/rabbit-r1-front.jpg' | relative_url }})"></div>
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <span class="badge bg-warning">AI Hardware</span>
+              <span class="text-muted small">2025</span>
+            </div>
+            <h3 class="card-title">Dispositivo r1 (in modalità sviluppatore)</h3>
+            <p class="text-muted">Dispositivo AI portatile che può eseguire DaDoOS, grazie alla modalità sviluppatore, progettato per semplificare le interazioni digitali quotidiane.</p>
+          </div>
+          <div class="card-footer bg-transparent border-0">
+            <a href="{{ page.lang | append: '/current-projects.html' | relative_url }}" class="btn btn-outline-primary w-100">{{ translations.projects.learn_more }}</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-6 col-lg-4 project-card">
+        <div class="card h-100">
+          <div class="card-img-top img-responsive img-responsive-16by9" style="background-image: url({{ '/assets/images/hero/ai-interface.jpg' | relative_url }})"></div>
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <span class="badge bg-success">Software</span>
+              <span class="text-muted small">2025</span>
+            </div>
+            <h3 class="card-title">Large Action Model (L.A.M.)</h3>
+            <p class="text-muted">Il nostro modello AI Open Source utilizzato che apprende dalle interazioni umane per automatizzare compiti complessi.</p>
+          </div>
+          <div class="card-footer bg-transparent border-0">
+            <a href="{{ page.lang | append: '/current-projects.html' | relative_url }}" class="btn btn-outline-primary w-100">{{ translations.projects.learn_more }}</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-6 col-lg-4 project-card">
+        <div class="card h-100">
+          <div class="card-img-top img-responsive img-responsive-16by9" style="background-image: url({{ '/assets/images/projects/placeholder.png' | relative_url }})"></div>
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <span class="badge bg-info">Ricerca</span>
+              <span class="text-muted small">2025</span>
+            </div>
+            <h3 class="card-title">Assistente AI Avanzato (A.A.A.)</h3>
+            <p class="text-muted">Assistente AI avanzato capace di ricercare, codificare e pianificare attività in modo autonomo interagendo con l'operatore.</p>
+          </div>
+          <div class="card-footer bg-transparent border-0">
+            <a href="{{ page.lang | append: '/portfolio.html' | relative_url }}" class="btn btn-outline-primary w-100">{{ translations.projects.learn_more }}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Call to Action Section -->
+<div class="container-xl py-5">
+  <div class="row justify-content-center">
+    <div class="col-lg-10">
+      <div class="card bg-primary text-white">
+        <div class="card-body p-5 text-center">
+          <h2 class="display-5 mb-3">{{ translations.cta.title }}</h2>
+          <p class="fs-4 mb-4">{{ translations.cta.description }}</p>
+          <div class="d-flex flex-column flex-md-row justify-content-center gap-3">
+            <a href="{{ page.lang | append: '/services.html' | relative_url }}" class="btn btn-lg btn-white">{{ translations.cta.explore_services }}</a>
+            <a href="{{ page.lang | append: '/about.html' | relative_url }}" class="btn btn-lg btn-primary-lt">{{ translations.cta.contact_us }}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Contact Section -->
+<div class="container-xl py-5">
+  <div class="row justify-content-center">
+    <div class="col-lg-8">
+      <div class="card">
+        <div class="card-header">
+          <h3 class="card-title">{{ translations.contact.title }}</h3>
+        </div>
+        <div class="card-body">
+          <form id="contact-form">
+            <div class="mb-3">
+              <label class="form-label">{{ translations.contact.name }}</label>
+              <input type="text" class="form-control" name="name" placeholder="{{ translations.contact.name_placeholder }}" required>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">{{ translations.contact.email }}</label>
+              <input type="email" class="form-control" name="email" placeholder="{{ translations.contact.email_placeholder }}" required>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">{{ translations.contact.subject }}</label>
+              <input type="text" class="form-control" name="subject" placeholder="{{ translations.contact.subject_placeholder }}" required>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">{{ translations.contact.message }}</label>
+              <textarea class="form-control" name="message" rows="5" placeholder="{{ translations.contact.message_placeholder }}" required></textarea>
+            </div>
+            <div class="form-footer">
+              <button type="submit" class="btn btn-primary">{{ translations.contact.send }}</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

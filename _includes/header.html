@@ -1,0 +1,61 @@
+{% assign translations = site.data.translations[page.lang] %}
+
+<!-- Header -->
+<header class="navbar navbar-expand-md navbar-light d-print-none">
+  <div class="container-xl">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <h1 class="navbar-brand navbar-brand-autodark d-none-navbar-horizontal pe-0 pe-md-3">
+      <a href="{{ page.lang | default: site.default_lang | append: '/index.html' | relative_url }}">
+        <img src="{{ '/assets/images/logo/logo.png' | relative_url }}" alt="DoDa e-Agency" class="navbar-brand-image">
+      </a>
+    </h1>
+    <div class="navbar-nav flex-row order-md-last">
+      <!-- Language Selector -->
+      <div class="nav-item dropdown me-3">
+        <a href="#" class="nav-link px-0 dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside" role="button" aria-expanded="false">
+          <i class="ti ti-language"></i>
+          <span class="d-none d-md-inline">{{ translations.header.language_selector }}</span>
+        </a>
+        <div class="dropdown-menu dropdown-menu-end">
+          {% for lang in site.languages %}
+            {% assign lang_url = page.url | replace_first: page.lang, lang %}
+            {% if lang == site.default_lang and page.url contains page.lang %}
+              {% assign lang_url = page.url | replace_first: page.lang | append: lang %}
+            {% endif %}
+            <a href="{{ lang_url | relative_url }}" class="dropdown-item {% if lang == page.lang %}active{% endif %}">
+              {% if lang == 'en' %}English{% endif %}
+              {% if lang == 'it' %}Italiano{% endif %}
+            </a>
+          {% endfor %}
+        </div>
+      </div>
+      
+      <!-- Notification -->
+      <div class="nav-item dropdown d-none d-md-flex me-3">
+        <a href="https://www.hostinger.com/it/referral?REFERRALCODE=RABBITWORLD" class="nav-link px-0" target="_blank" rel="noopener">
+          <i class="ti ti-bell"></i>
+          <span class="badge bg-red"></span>
+        </a>
+        <div class="dropdown-menu dropdown-menu-arrow dropdown-menu-end dropdown-menu-card">
+          <div class="card">
+            <div class="card-header">
+              <h3 class="card-title">{{ translations.header.notification }}</h3>
+            </div>
+            <div class="list-group list-group-flush list-group-hoverable">
+              <div class="list-group-item">
+                <div class="row align-items-center">
+                  <div class="col-auto"><span class="status-dot status-dot-animated bg-red d-block"></span></div>
+                  <div class="col text-truncate">
+                    <a href="https://www.hostinger.com/it/referral?REFERRALCODE=RABBITWORLD" class="text-body d-block" target="_blank">{{ translations.header.notification }}</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>

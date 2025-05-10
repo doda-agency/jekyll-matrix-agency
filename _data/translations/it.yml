@@ -1,0 +1,61 @@
+# Italian translations
+site:
+  title: "DoDa e-Agency"
+  description: "La prima agenzia Web Open Source ad utilizzare DaDoOS, un sistema operativo AI-native progettato per rivoluzionare il modo in cui interagiamo con la tecnologia."
+  
+navigation:
+  home: "Home"
+  about: "Chi siamo"
+  services: "Servizi"
+  current_projects: "Progetti in corso"
+  portfolio: "Portfolio"
+  
+header:
+  notification: "Hai un invito dall'agenzia web!"
+  language_selector: "Lingua"
+  
+hero:
+  title: "Il futuro dell'interazione uomo-macchina"
+  description: "DoDa e-Agency utilizza DaDoOS che è un sistema operativo AI-native progettato per rivoluzionare il modo in cui interagiamo con la tecnologia."
+  explore_projects: "Esplora i Progetti"
+  learn_more: "Scopri di più"
+  
+features:
+  lam_title: "Large Action Model"
+  lam_description: "Il nostro modello AI avanzato utilizzato comprende e automatizza le interazioni software complesse."
+  interface_title: "Interfaccia Intuitiva"
+  interface_description: "Interazione testuale, vocale e touch per un'esperienza utente semplice e naturale."
+  privacy_title: "Privacy Avanzata"
+  privacy_description: "Funzionalità di privacy integrate, inclusa la modalità incognito per una navigazione passiva."
+  
+projects:
+  featured_title: "Progetti in Evidenza"
+  featured_description: "Scopri le nostre innovazioni più recenti nel campo dell'intelligenza artificiale"
+  learn_more: "Scopri di più"
+  
+cta:
+  title: "Pronto a rivoluzionare il tuo approccio alla tecnologia?"
+  description: "Unisciti a noi nello sviluppo del futuro dell'interazione uomo-macchina"
+  explore_services: "Esplora i Servizi"
+  contact_us: "Contattaci"
+  
+contact:
+  title: "Contattaci"
+  name: "Nome"
+  name_placeholder: "Il tuo nome"
+  email: "Email"
+  email_placeholder: "La tua email"
+  subject: "Oggetto"
+  subject_placeholder: "Oggetto del messaggio"
+  message: "Messaggio"
+  message_placeholder: "Il tuo messaggio"
+  send: "Invia messaggio"
+  
+footer:
+  contribute: "Contribuisci su GitHub"
+  about: "Chi siamo"
+  services: "Servizi"
+  contacts: "Contatti"
+  copyright: "Copyright © 2025 DoDa e-Agency"
+  privacy: "Privacy Policy"
+  terms: "Termini di Servizio"

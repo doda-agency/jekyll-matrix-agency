@@ -1,0 +1,176 @@
+- category: operating-system
+  description: Sviluppo e utilizzo del sistema operativo open source per la piattaforma
+    DoDa e-Agency, la prima web agency basata sull'intelligenza artificiale, progettato
+    per coordinare più agenti di intelligenza artificiale e assistere il nostro team
+    nell'esecuzione di attività online e nel controllo delle interfacce digitali.
+    Questo sistema sarà implementato direttamente sui dispositivi dell'agenzia per
+    ottimizzare i flussi di lavoro e migliorare l'automazione. (Powered by AnduinOS
+    - www.anduinos.com)
+  github: https://github.com/doda-agency/core-platform
+  id: DaDoOS-core
+  image: assets/img/projects/AnduinOS.webp
+  name: Piattaforma principale di DoDa e-Agency
+  progress: 65
+  startDate: '2024-09-15'
+  status: In Development
+  teamMembers:
+  - Marco Rossi
+  - Elena Bianchi
+  - Luca Verdi
+  technologies:
+  - Python
+  - TensorFlow
+  - PyTorch
+  - React
+  - Node.js
+  url: https://www.anduinos.com
+- category: ai-model
+  description: Sviluppo di un Large Action Model in grado di comprendere e interagire
+    con le interfacce software, consentendo agli utenti di eseguire azioni semplicemente
+    premendo un pulsante e pronunciando istruzioni.
+  github: https://github.com/doda-agency/large-action-model
+  id: large-action-model
+  image: assets/img/projects/large_action_model.png
+  name: Modello di azione di grandi dimensioni (L.A.M.)
+  progress: 70
+  startDate: '2024-08-01'
+  status: In Development
+  teamMembers:
+  - Sofia Romano
+  - Alessandro Marino
+  - Giulia Costa
+  technologies:
+  - Python
+  - PyTorch
+  - Transformer Architecture
+  - RLHF
+  url: https://rabbit-world.github.io
+- category: ai-system
+  description: Development of a cross-platform AI agent system that can operate across
+    desktop and mobile platforms, coordinating multiple specialized agents to complete
+    complex tasks.
+  github: https://github.com/doda-agency/multi-agent-system
+  id: multi-agent-system
+  image: assets/img/projects/multi_agent_system.webp
+  name: Cross-Platform Agent System
+  progress: 30
+  startDate: '2024-11-01'
+  status: Planning
+  teamMembers:
+  - Roberto Esposito
+  - Francesca Ricci
+  - Davide Moretti
+  technologies:
+  - Python
+  - JavaScript
+  - React Native
+  - TensorFlow
+  - Docker
+  url: https://rabbit-world.github.io
+- category: hardware
+  description: Integration of DaDoOS with the Open Source hardware device, like an
+    orange raspberry with a lcd, to create a seamless AI assistant experience in a
+    pocket-sized form factor.
+  github: https://github.com/doda-agency/open-source-integration
+  id: open-source-device-integration
+  image: assets/img/projects/Open_Source_Device.png
+  name: Open Source Device Integration
+  progress: 30
+  startDate: '2024-07-15'
+  status: In Development
+  teamMembers:
+  - Andrea Conti
+  - Paolo Ferrari
+  - Chiara Martini
+  technologies:
+  - C++
+  - Android
+  - Embedded Systems
+  - Hardware APIs
+  url: https://rabbit-world.github.io
+- category: mobile
+  description: Development of a mobile interface for the DaDoOS AI assistant, allowing
+    users to interact with the system through natural language and receive visual
+    feedback on their requests.
+  github: https://github.com/doda-agency/mobile-assistant
+  id: mobile-ai-assistant
+  image: assets/img/projects/mobile_ai_assistant.png
+  name: Mobile AI Assistant Interface
+  progress: 60
+  startDate: '2024-10-01'
+  status: In Development
+  teamMembers:
+  - Laura Ferrara
+  - Matteo Colombo
+  - Valentina Rizzo
+  technologies:
+  - React Native
+  - TypeScript
+  - GraphQL
+  - WebRTC
+  url: https://rabbit-world.github.io
+- category: framework
+  description: Development of a framework that allows AI agents to understand and
+    interact with existing software interfaces, enabling automation of complex tasks
+    across different applications.
+  github: https://github.com/doda-agency/interaction-framework
+  id: ai-interaction-framework
+  image: assets/img/projects/ai_interaction.jpg
+  name: AI Software Interaction Framework
+  progress: 25
+  startDate: '2025-01-15'
+  status: Planning
+  teamMembers:
+  - Simone Russo
+  - Federica Gallo
+  - Nicola Greco
+  technologies:
+  - Python
+  - Computer Vision
+  - OCR
+  - Selenium
+  - Puppeteer
+  url: https://rabbit-world.github.io
+- category: web
+  description: Development of a playground environment for teaching and storing web-based
+    procedures, allowing users to train the Large Action Model on custom tasks and
+    workflows.
+  github: https://github.com/doda-agency/lam-playground
+  id: lam-playground
+  image: assets/img/projects/placeholder.png
+  name: LAM Playground
+  progress: 15
+  startDate: '2025-02-01'
+  status: Planning
+  teamMembers:
+  - Antonio Mancini
+  - Elisa Lombardi
+  - Gabriele Fabbri
+  technologies:
+  - JavaScript
+  - React
+  - Node.js
+  - MongoDB
+  - WebAssembly
+  url: https://rabbit-world.github.io
+- category: tools
+  description: Creation of open-source tools and documentation to help the community
+    develop custom applications and extensions for the Open Source device and DaDoOS
+    platform.
+  github: https://github.com/doda-agency/discourse
+  id: DoDa-community-tools
+  image: assets/img/projects/DoDa_community.png
+  name: DoDa Community Development Tools
+  progress: 40
+  startDate: '2024-12-01'
+  status: In Development
+  teamMembers:
+  - Davide S.
+  - Big Dan
+  - Doina M.
+  technologies:
+  - JavaScript
+  - Python
+  - Documentation
+  - Android SDK
+  url: https://github.com/doda-agency/discourse

@@ -1,0 +1,226 @@
+- category: hardware
+  client: Rabbit Inc.
+  completionDate: '2024-01-15'
+  description: Development of the Rabbit R1 hardware device, a pocket-sized AI assistant
+    co-designed with Teenage Engineering. The device features a 2.88-inch touchscreen,
+    128GB storage, 4GB RAM, and runs on the innovative DaDoOS platform.
+  github: https://github.com/doda-agency/r1-hardware
+  id: rabbit-r1-device
+  image: assets/img/projects/rabbit_r1_device.jpg
+  name: Open Source Hardware Device
+  results: Successfully launched at CES 2024 with positive market reception. The compact,
+    bright orange device became one of the most talked-about AI hardware products
+    of the year.
+  teamMembers:
+  - Jesse Lyu
+  - Dan Ferris
+  - Hardware Engineering Team
+  technologies:
+  - Hardware Design
+  - Embedded Systems
+  - MediaTek Helio G36
+  - Touch Interface
+  url: https://rabbit-world.github.io
+- category: ai-model
+  client: Rabbit Inc.
+  completionDate: '2023-12-10'
+  description: Development of the core Large Action Model technology that powers DaDoOS.
+    This AI system goes beyond traditional language models by translating natural
+    language commands into executable actions across digital interfaces.
+  github: https://github.com/doda-agency/lam-core
+  id: large-action-model-core
+  image: assets/img/projects/large_action_model.png
+  name: Large Action Model (LAM) Core
+  results: Created a revolutionary AI model capable of understanding and executing
+    complex user intentions across various digital platforms and interfaces.
+  teamMembers:
+  - AI Research Team
+  - Jesse Lyu
+  - Machine Learning Engineers
+  technologies:
+  - Python
+  - PyTorch
+  - Transformer Architecture
+  - RLHF
+  url: https://rabbit-world.github.io
+- category: operating-system
+  client: Rabbit Inc.
+  completionDate: '2023-12-20'
+  description: Design and implementation of the DaDoOS user interface for the Rabbit
+    R1 device. The interface provides an intuitive, voice-first interaction model
+    with visual feedback and a simplified control scheme.
+  github: https://github.com/doda-agency/os-interface
+  id: DaDoOS-interface
+  image: assets/img/projects/rabbitOS_release.png
+  name: DaDoOS User Interface
+  results: Delivered a streamlined, user-friendly interface that allows users to interact
+    naturally with the AI assistant through voice commands and simple touch controls.
+  teamMembers:
+  - UI/UX Team
+  - Software Engineers
+  - Justin Oren
+  technologies:
+  - UI/UX Design
+  - Android
+  - Voice Interface
+  - Touch Controls
+  url: https://rabbit-world.github.io
+- category: integration
+  client: Rabbit Inc.
+  completionDate: '2024-02-28'
+  description: Integration of DaDoOS with popular third-party services including Uber,
+    DoorDash, Spotify, and Midjourney. This project enabled the Rabbit R1 to perform
+    actions across multiple platforms through a unified interface.
+  github: https://github.com/doda-agency/service-integrations
+  id: cross-platform-integration
+  image: assets/img/projects/ai_interaction.jpg
+  name: Cross-Platform Service Integration
+  results: Successfully integrated with major service providers, allowing users to
+    perform complex tasks like ordering food or requesting rides through simple voice
+    commands.
+  teamMembers:
+  - Integration Team
+  - API Specialists
+  - Dan Ferris
+  technologies:
+  - API Integration
+  - OAuth
+  - Service Connectors
+  - Python
+  url: https://rabbit-world.github.io
+- category: ai-feature
+  client: Rabbit Inc.
+  completionDate: '2024-03-15'
+  description: Development of the innovative 'Teach Mode' feature for DaDoOS, allowing
+    users to train the AI assistant to perform custom tasks through natural language
+    instructions and demonstrations.
+  github: https://github.com/doda-agency/teach-mode
+  id: teach-mode-feature
+  image: assets/img/projects/multi_agent_system.webp
+  name: Teach Mode Implementation
+  results: Created a groundbreaking feature that allows users to customize their AI
+    assistant's capabilities without programming knowledge, significantly expanding
+    the device's utility.
+  teamMembers:
+  - AI Learning Team
+  - UX Researchers
+  - Jesse Lyu
+  technologies:
+  - Machine Learning
+  - Reinforcement Learning
+  - Python
+  - User Interaction Design
+  url: https://rabbit-world.github.io
+- category: language
+  client: Rabbit Inc.
+  completionDate: '2024-04-10'
+  description: Implementation of comprehensive multilingual capabilities for DaDoOS,
+    enabling the Rabbit R1 to understand and respond in multiple languages and perform
+    real-time translation.
+  github: https://github.com/doda-agency/multilingual
+  id: multilingual-support
+  image: assets/img/projects/mobile_ai_assistant.png
+  name: Multilingual Support System
+  results: Expanded the device's market reach by adding support for multiple languages,
+    making it accessible to a global audience and enabling real-time translation features.
+  teamMembers:
+  - Linguistics Team
+  - Software Engineers
+  - Localization Specialists
+  technologies:
+  - NLP
+  - Translation APIs
+  - Language Models
+  - Internationalization
+  url: https://rabbit-world.github.io
+- category: development-tools
+  client: Rabbit Inc.
+  completionDate: '2024-04-25'
+  description: Creation of a developer mode for the Rabbit R1 device, including bootloader
+    unlocking capabilities and a software development kit (SDK) for third-party developers
+    to build applications for DaDoOS.
+  github: https://github.com/doda-agency/developer-tools
+  id: developer-mode
+  image: assets/img/projects/placeholder.png
+  name: Developer Mode & SDK
+  results: Established a growing developer ecosystem around DaDoOS by providing tools
+    and documentation for third-party developers to create custom applications and
+    extensions.
+  teamMembers:
+  - Developer Relations
+  - Documentation Team
+  - Justin Oren
+  technologies:
+  - SDK Development
+  - API Design
+  - Documentation
+  - Developer Tools
+  url: https://rabbit-world.github.io
+- category: cloud
+  client: Rabbit Inc.
+  completionDate: '2024-02-15'
+  description: Design and implementation of the cloud infrastructure supporting DaDoOS,
+    including automatic updates, user data synchronization, and distributed AI processing
+    capabilities.
+  github: https://github.com/doda-agency/cloud-infrastructure
+  id: cloud-infrastructure
+  image: assets/img/projects/placeholder.png
+  name: DaDoOS Cloud Infrastructure
+  results: Delivered a robust, scalable cloud platform that powers the AI capabilities
+    of DaDoOS while ensuring reliable service, automatic updates, and data security.
+  teamMembers:
+  - Cloud Engineering Team
+  - DevOps Specialists
+  - Security Engineers
+  technologies:
+  - AWS
+  - Kubernetes
+  - Docker
+  - CI/CD
+  - Distributed Systems
+  url: https://rabbit-world.github.io
+- category: integration
+  client: Rabbit Inc. & Perplexity
+  completionDate: '2024-03-05'
+  description: Integration of Perplexity's advanced search capabilities into DaDoOS,
+    providing users with up-to-date information and answers to complex queries through
+    natural language interaction.
+  github: https://github.com/doda-agency/perplexity-integration
+  id: perplexity-search-integration
+  image: assets/img/projects/placeholder.png
+  name: Perplexity Search Integration
+  results: Enhanced the information retrieval capabilities of DaDoOS with state-of-the-art
+    search technology, allowing users to access current and accurate information through
+    conversational queries.
+  teamMembers:
+  - Search Integration Team
+  - API Specialists
+  - Dan Ferris
+  technologies:
+  - API Integration
+  - Search Algorithms
+  - Natural Language Processing
+  - Information Retrieval
+  url: https://rabbit-world.github.io
+- category: creative-ai
+  client: Rabbit Inc. & Midjourney
+  completionDate: '2024-03-20'
+  description: Implementation of image generation capabilities in DaDoOS through integration
+    with Midjourney's AI art generation platform, allowing users to create images
+    through natural language descriptions.
+  github: https://github.com/doda-agency/midjourney-feature
+  id: image-generation-feature
+  image: assets/img/projects/placeholder.png
+  name: Midjourney Image Generation Feature
+  results: Added creative capabilities to the Rabbit R1 device, enabling users to
+    generate custom images through simple voice commands and natural language descriptions.
+  teamMembers:
+  - Creative AI Team
+  - Integration Specialists
+  - UI Designers
+  technologies:
+  - API Integration
+  - Image Processing
+  - Prompt Engineering
+  - UI Design
+  url: https://rabbit-world.github.io

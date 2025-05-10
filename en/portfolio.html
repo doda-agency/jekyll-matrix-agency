@@ -1,0 +1,351 @@
+---
+layout: page
+title: Portfolio
+description: Explore the portfolio of completed projects by DoDa e-Agency, which operates with an AI-native operating system that revolutionizes human-machine interaction.
+keywords: DoDa e-Agency, DaDoOS, portfolio, completed projects, AI, artificial intelligence, Rabbit R1, LAM, Large Action Model
+lang: en
+---
+
+{% assign translations = site.data.translations[page.lang] %}
+
+<div class="container-xl">
+  <!-- Portfolio Overview -->
+  <div class="row mb-4">
+    <div class="col-12">
+      <div class="card">
+        <div class="card-body">
+          <h3 class="card-title">Our Portfolio</h3>
+          <p>
+            Explore the projects completed by DoDa e-Agency, ranging from advanced AI model development to innovative user interfaces. Each project represents a step forward in our mission to revolutionize human-machine interaction.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Portfolio Grid -->
+  <div class="row row-cards" id="featured-projects">
+    <!-- Portfolio items will be loaded dynamically from JSON -->
+  </div>
+  
+  <!-- Case Studies -->
+  <div class="row mt-4">
+    <div class="col-12">
+      <div class="card">
+        <div class="card-header">
+          <h3 class="card-title">Case Studies</h3>
+        </div>
+        <div class="card-body">
+          <div class="row">
+            <div class="col-md-6 mb-4">
+              <div class="card">
+                <div class="card-img-top img-responsive img-responsive-21by9" style="background-image: url({{ '/assets/images/projects/case-study-1.jpg' | relative_url }})"></div>
+                <div class="card-body">
+                  <h4 class="card-title">LAM Implementation in Corporate Environment</h4>
+                  <p class="text-muted">
+                    Case study on the implementation of the Large Action Model in a financial services company, with results in automation and efficiency improvement.
+                  </p>
+                  <div class="d-flex align-items-center mt-4">
+                    <div>
+                      <div class="font-weight-medium">Key Results:</div>
+                      <div class="text-muted">
+                        <ul class="list-unstyled mt-1">
+                          <li>• 45% reduction in time for repetitive tasks</li>
+                          <li>• 30% increase in customer satisfaction</li>
+                          <li>• Positive ROI in 6 months</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <a href="#" class="btn btn-primary">Read the full case study</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 mb-4">
+              <div class="card">
+                <div class="card-img-top img-responsive img-responsive-21by9" style="background-image: url({{ '/assets/images/projects/case-study-2.jpg' | relative_url }})"></div>
+                <div class="card-body">
+                  <h4 class="card-title">Voice Interface for Healthcare Services</h4>
+                  <p class="text-muted">
+                    Implementation of a DaDoOS-based voice interface to improve accessibility of healthcare services for patients with reduced mobility.
+                  </p>
+                  <div class="d-flex align-items-center mt-4">
+                    <div>
+                      <div class="font-weight-medium">Key Results:</div>
+                      <div class="text-muted">
+                        <ul class="list-unstyled mt-1">
+                          <li>• Simplified access for patients with disabilities</li>
+                          <li>• 60% reduction in waiting times</li>
+                          <li>• 40% increase in therapy adherence</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <a href="#" class="btn btn-primary">Read the full case study</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Testimonials -->
+  <div class="row mt-4">
+    <div class="col-12">
+      <div class="card">
+        <div class="card-header">
+          <h3 class="card-title">Client Testimonials</h3>
+        </div>
+        <div class="card-body">
+          <div class="row">
+            <div class="col-md-4 mb-4">
+              <div class="card">
+                <div class="card-body">
+                  <div class="d-flex mb-3">
+                    <div class="me-3">
+                      <span class="avatar avatar-md">LM</span>
+                    </div>
+                    <div>
+                      <h4 class="m-0">Luca M.</h4>
+                      <div class="text-muted">CIO, TechnoItalia</div>
+                    </div>
+                  </div>
+                  <p class="text-muted">
+                    "The AI implementation has completely transformed our approach to process automation. The system's ability to learn from user interactions has led to significant improvements in operational efficiency."
+                  </p>
+                  <div class="d-flex text-warning">
+                    <i class="ti ti-star-filled"></i>
+                    <i class="ti ti-star-filled"></i>
+                    <i class="ti ti-star-filled"></i>
+                    <i class="ti ti-star-filled"></i>
+                    <i class="ti ti-star"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="card">
+                <div class="card-body">
+                  <div class="d-flex mb-3">
+                    <div class="me-3">
+                      <span class="avatar avatar-md">SF</span>
+                    </div>
+                    <div>
+                      <h4 class="m-0">Sofia F.</h4>
+                      <div class="text-muted">CEO, InnovaSalute</div>
+                    </div>
+                  </div>
+                  <p class="text-muted">
+                    "The voice interface project developed by DoDa e-Agency has revolutionized the way our patients interact with healthcare services. The ease of use and accuracy of the system have exceeded our expectations."
+                  </p>
+                  <div class="d-flex text-warning">
+                    <i class="ti ti-star-filled"></i>
+                    <i class="ti ti-star-filled"></i>
+                    <i class="ti ti-star-filled"></i>
+                    <i class="ti ti-star-filled"></i>
+                    <i class="ti ti-star-filled"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="card">
+                <div class="card-body">
+                  <div class="d-flex mb-3">
+                    <div class="me-3">
+                      <span class="avatar avatar-md">MR</span>
+                    </div>
+                    <div>
+                      <h4 class="m-0">Marco R.</h4>
+                      <div class="text-muted">CTO, DigitalFuture</div>
+                    </div>
+                  </div>
+                  <p class="text-muted">
+                    "Collaborating with DoDa e-Agency has allowed us to implement cutting-edge AI solutions that have transformed our productivity. The team was exceptional in understanding our needs and providing tailored solutions."
+                  </p>
+                  <div class="d-flex text-warning">
+                    <i class="ti ti-star-filled"></i>
+                    <i class="ti ti-star-filled"></i>
+                    <i class="ti ti-star-filled"></i>
+                    <i class="ti ti-star-filled"></i>
+                    <i class="ti ti-star-filled"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Stats -->
+  <div class="row mt-4">
+    <div class="col-12">
+      <div class="card">
+        <div class="card-body">
+          <div class="row text-center">
+            <div class="col-md-3 mb-3 mb-md-0">
+              <div class="h1 m-0">25+</div>
+              <div class="text-muted">Completed Projects</div>
+            </div>
+            <div class="col-md-3 mb-3 mb-md-0">
+              <div class="h1 m-0">15+</div>
+              <div class="text-muted">Satisfied Clients</div>
+            </div>
+            <div class="col-md-3 mb-3 mb-md-0">
+              <div class="h1 m-0">98%</div>
+              <div class="text-muted">Satisfaction Rate</div>
+            </div>
+            <div class="col-md-3">
+              <div class="h1 m-0">5+</div>
+              <div class="text-muted">Years of Experience</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Contact Form -->
+  <div class="row mt-4">
+    <div class="col-12">
+      <div class="card">
+        <div class="card-header">
+          <h3 class="card-title" id="contact-form">Contact Us</h3>
+        </div>
+        <div class="card-body">
+          <form>
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label class="form-label">Name</label>
+                <input type="text" class="form-control" placeholder="Your name" required>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label class="form-label">Email</label>
+                <input type="email" class="form-control" placeholder="Your email" required>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label class="form-label">Company</label>
+                <input type="text" class="form-control" placeholder="Company name">
+              </div>
+              <div class="col-md-6 mb-3">
+                <label class="form-label">Subject</label>
+                <input type="text" class="form-control" placeholder="Message subject" required>
+              </div>
+              <div class="col-12 mb-3">
+                <label class="form-label">Message</label>
+                <textarea class="form-control" rows="5" placeholder="Your message" required></textarea>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-primary">Send Message</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Load portfolio projects from JSON
+    fetch('{{ "/_data/projects/en/portfolio-projects.json" | relative_url }}')
+      .then(response => response.json())
+      .then(data => {
+        const projectsContainer = document.getElementById('featured-projects');
+        
+        data.forEach(project => {
+          const projectCard = document.createElement('div');
+          projectCard.className = 'col-md-6 col-lg-4 mb-4';
+          projectCard.dataset.category = project.category || 'other';
+          
+          projectCard.innerHTML = `
+            <div class="card">
+              <div class="card-img-top img-responsive img-responsive-21by9" style="background-image: url({{ '/assets/images/projects/' | relative_url }}${project.image || 'default-project.jpg'})"></div>
+              <div class="card-body">
+                <div class="d-flex align-items-center mb-3">
+                  <span class="badge bg-${project.badge_color || 'primary'} me-2">${project.category || 'Project'}</span>
+                  <span class="text-muted">${project.year || '2025'}</span>
+                </div>
+                <h3 class="card-title">${project.name}</h3>
+                <p class="text-muted">${project.description}</p>
+                <div class="mt-4">
+                  <div class="row">
+                    <div class="col">
+                      <div class="d-flex align-items-center">
+                        <div class="avatar-list avatar-list-stacked">
+                          ${(project.team || []).map(member => `
+                            <span class="avatar avatar-xs rounded" style="background-image: url({{ '/assets/images/team/' | relative_url }}${member.image || 'default-avatar.jpg'})"></span>
+                          `).join('')}
+                        </div>
+                        <div class="ms-2">${project.team ? project.team.length : 0} Contributors</div>
+                      </div>
+                    </div>
+                    <div class="col-auto">
+                      <a href="${project.url || '#'}" class="btn btn-primary">
+                        View Details
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          `;
+          
+          projectsContainer.appendChild(projectCard);
+        });
+        
+        // Initialize search and filter functionality
+        const searchInput = document.getElementById('portfolio-search');
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        
+        if (searchInput) {
+          searchInput.addEventListener('input', function() {
+            const searchTerm = this.value.toLowerCase();
+            const projects = document.querySelectorAll('#featured-projects > div');
+            
+            projects.forEach(project => {
+              const title = project.querySelector('.card-title').textContent.toLowerCase();
+              const description = project.querySelector('.text-muted').textContent.toLowerCase();
+              
+              if (title.includes(searchTerm) || description.includes(searchTerm)) {
+                project.style.display = '';
+              } else {
+                project.style.display = 'none';
+              }
+            });
+          });
+        }
+        
+        if (filterButtons) {
+          filterButtons.forEach(button => {
+            button.addEventListener('click', function(e) {
+              e.preventDefault();
+              const filter = this.dataset.filter;
+              const projects = document.querySelectorAll('#featured-projects > div');
+              
+              projects.forEach(project => {
+                if (filter === 'all' || project.dataset.category === filter) {
+                  project.style.display = '';
+                } else {
+                  project.style.display = 'none';
+                }
+              });
+            });
+          });
+        }
+      })
+      .catch(error => {
+        console.error('Error loading projects:', error);
+        document.getElementById('featured-projects').innerHTML = '<div class="col-12"><div class="alert alert-danger">Error loading projects. Please try again later.</div></div>';
+      });
+  });
+</script>

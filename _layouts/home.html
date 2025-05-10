@@ -1,0 +1,213 @@
+---
+layout: default
+---
+{% assign translations = site.data.translations[page.lang] %}
+
+<!-- Hero Section -->
+<div class="hero bg-primary-subtle py-5">
+  <div class="container-xl">
+    <div class="row align-items-center g-4">
+      <div class="col-lg-6">
+        <h1 class="display-3 fw-bold mb-3">{{ translations.hero.title }}</h1>
+        <p class="fs-2 text-muted">{{ translations.hero.description }}</p>
+        <div class="mt-4">
+          <a href="{{ page.lang | append: '/current-projects.html' | relative_url }}" class="btn btn-primary btn-lg me-2">{{ translations.hero.explore_projects }}</a>
+          <a href="{{ page.lang | append: '/about.html' | relative_url }}" class="btn btn-outline-primary btn-lg">{{ translations.hero.learn_more }}</a>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="position-relative rounded">
+          {{ content }}
+          <div class="position-absolute top-0 end-0 p-3 bg-white rounded-3 shadow-lg" style="transform: translate(20%, -20%); max-width: 180px;">
+            <div class="d-flex align-items-center">
+              <i class="ti ti-robot fs-1 text-primary me-2"></i>
+              <div>
+                <div class="fw-bold">AI-Powered</div>
+                <div class="text-muted small">Natural interaction</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Features Section -->
+<div class="container-xl py-5">
+  <div class="row g-4 text-center">
+    <div class="col-md-4">
+      <div class="card h-100 border-0 shadow-sm">
+        <div class="card-body">
+          <div class="icon-box mb-3">
+            <i class="ti ti-brain fs-1 text-primary"></i>
+          </div>
+          <h3 class="card-title">{{ translations.features.lam_title }}</h3>
+          <p class="text-muted">{{ translations.features.lam_description }}</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card h-100 border-0 shadow-sm">
+        <div class="card-body">
+          <div class="icon-box mb-3">
+            <i class="ti ti-device-mobile fs-1 text-primary"></i>
+          </div>
+          <h3 class="card-title">{{ translations.features.interface_title }}</h3>
+          <p class="text-muted">{{ translations.features.interface_description }}</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card h-100 border-0 shadow-sm">
+        <div class="card-body">
+          <div class="icon-box mb-3">
+            <i class="ti ti-shield-lock fs-1 text-primary"></i>
+          </div>
+          <h3 class="card-title">{{ translations.features.privacy_title }}</h3>
+          <p class="text-muted">{{ translations.features.privacy_description }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Featured Projects Section -->
+<div class="bg-light py-5">
+  <div class="container-xl">
+    <div class="row mb-4">
+      <div class="col-12">
+        <h2 class="text-center mb-4">{{ translations.projects.featured_title }}</h2>
+        <p class="text-center text-muted mb-5">{{ translations.projects.featured_description }}</p>
+      </div>
+    </div>
+    <div class="row g-4" id="projects-container">
+      {% if page.featured_projects %}
+        {% for project in page.featured_projects %}
+          <div class="col-md-6 col-lg-4 project-card">
+            <div class="card h-100">
+              <div class="card-img-top img-responsive img-responsive-16by9" style="background-image: url({{ project.image | relative_url }})"></div>
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                  <span class="badge bg-{{ project.badge_color | default: 'primary' }}">{{ project.category }}</span>
+                  <span class="text-muted small">{{ project.year }}</span>
+                </div>
+                <h3 class="card-title">{{ project.title }}</h3>
+                <p class="text-muted">{{ project.description }}</p>
+              </div>
+              <div class="card-footer bg-transparent border-0">
+                <a href="{{ project.url | relative_url }}" class="btn btn-outline-primary w-100">{{ translations.projects.learn_more }}</a>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      {% else %}
+        <!-- Default featured projects if none specified in front matter -->
+        <div class="col-md-6 col-lg-4 project-card">
+          <div class="card h-100">
+            <div class="card-img-top img-responsive img-responsive-16by9" style="background-image: url({{ '/assets/images/hero/rabbit-r1-front.jpg' | relative_url }})"></div>
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <span class="badge bg-warning">AI Hardware</span>
+                <span class="text-muted small">2025</span>
+              </div>
+              <h3 class="card-title">r1 Device (in developer mode)</h3>
+              <p class="text-muted">Portable AI device that can run DaDoOS, thanks to developer mode, designed to simplify everyday digital interactions.</p>
+            </div>
+            <div class="card-footer bg-transparent border-0">
+              <a href="{{ page.lang | append: '/current-projects.html' | relative_url }}" class="btn btn-outline-primary w-100">{{ translations.projects.learn_more }}</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-6 col-lg-4 project-card">
+          <div class="card h-100">
+            <div class="card-img-top img-responsive img-responsive-16by9" style="background-image: url({{ '/assets/images/hero/ai-interface.jpg' | relative_url }})"></div>
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <span class="badge bg-success">Software</span>
+                <span class="text-muted small">2025</span>
+              </div>
+              <h3 class="card-title">Large Action Model (L.A.M.)</h3>
+              <p class="text-muted">Our Open Source AI model that learns from human interactions to automate complex tasks.</p>
+            </div>
+            <div class="card-footer bg-transparent border-0">
+              <a href="{{ page.lang | append: '/current-projects.html' | relative_url }}" class="btn btn-outline-primary w-100">{{ translations.projects.learn_more }}</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-6 col-lg-4 project-card">
+          <div class="card h-100">
+            <div class="card-img-top img-responsive img-responsive-16by9" style="background-image: url({{ '/assets/images/projects/placeholder.png' | relative_url }})"></div>
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <span class="badge bg-info">Research</span>
+                <span class="text-muted small">2025</span>
+              </div>
+              <h3 class="card-title">Advanced AI Assistant (A.A.A.)</h3>
+              <p class="text-muted">Advanced AI assistant capable of researching, coding, and planning tasks autonomously by interacting with the operator.</p>
+            </div>
+            <div class="card-footer bg-transparent border-0">
+              <a href="{{ page.lang | append: '/portfolio.html' | relative_url }}" class="btn btn-outline-primary w-100">{{ translations.projects.learn_more }}</a>
+            </div>
+          </div>
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+<!-- Call to Action Section -->
+<div class="container-xl py-5">
+  <div class="row justify-content-center">
+    <div class="col-lg-10">
+      <div class="card bg-primary text-white">
+        <div class="card-body p-5 text-center">
+          <h2 class="display-5 mb-3">{{ translations.cta.title }}</h2>
+          <p class="fs-4 mb-4">{{ translations.cta.description }}</p>
+          <div class="d-flex flex-column flex-md-row justify-content-center gap-3">
+            <a href="{{ page.lang | append: '/services.html' | relative_url }}" class="btn btn-lg btn-white">{{ translations.cta.explore_services }}</a>
+            <a href="#contact-form" class="btn btn-lg btn-primary-lt">{{ translations.cta.contact_us }}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Contact Section -->
+<div class="container-xl py-5" id="contact-form">
+  <div class="row justify-content-center">
+    <div class="col-lg-8">
+      <div class="card">
+        <div class="card-header">
+          <h3 class="card-title">{{ translations.contact.title }}</h3>
+        </div>
+        <div class="card-body">
+          <form id="contact-form">
+            <div class="mb-3">
+              <label class="form-label">{{ translations.contact.name }}</label>
+              <input type="text" class="form-control" name="name" placeholder="{{ translations.contact.name_placeholder }}" required>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">{{ translations.contact.email }}</label>
+              <input type="email" class="form-control" name="email" placeholder="{{ translations.contact.email_placeholder }}" required>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">{{ translations.contact.subject }}</label>
+              <input type="text" class="form-control" name="subject" placeholder="{{ translations.contact.subject_placeholder }}" required>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">{{ translations.contact.message }}</label>
+              <textarea class="form-control" name="message" rows="5" placeholder="{{ translations.contact.message_placeholder }}" required></textarea>
+            </div>
+            <div class="form-footer">
+              <button type="submit" class="btn btn-primary">{{ translations.contact.send }}</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,323 @@
+---
+layout: page
+title: Progetti in corso
+description: Esplora i progetti in corso di DoDa e-Agency, che opera con un sistema operativo AI-native progettato per rivoluzionare l'interazione uomo-macchina.
+keywords: DoDa e-Agency, DaDoOS, progetti, AI, intelligenza artificiale, Rabbit R1, LAM, Large Action Model, progetti in corso
+lang: it
+---
+
+{% assign translations = site.data.translations[page.lang] %}
+
+<div class="container-xl">
+  <!-- Projects Overview -->
+  <div class="row mb-4">
+    <div class="col-12">
+      <div class="card">
+        <div class="card-body">
+          <h3 class="card-title">I nostri progetti in corso</h3>
+          <p>
+            DoDa e-Agency è costantemente impegnata nello sviluppo di nuove tecnologie e soluzioni innovative nel campo dell'intelligenza artificiale. Qui puoi esplorare i progetti su cui stiamo attualmente lavorando, dalle soluzioni hardware ai modelli AI avanzati.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Projects Grid -->
+  <div class="row row-cards" id="current-projects">
+    <!-- Projects will be loaded dynamically from JSON -->
+  </div>
+  
+  <!-- Research Focus -->
+  <div class="row mt-4">
+    <div class="col-12">
+      <div class="card">
+        <div class="card-header">
+          <h3 class="card-title">Aree di ricerca</h3>
+        </div>
+        <div class="card-body">
+          <div class="row">
+            <div class="col-md-4 mb-4">
+              <div class="d-flex align-items-center mb-3">
+                <span class="avatar avatar-md bg-primary-lt me-3">
+                  <i class="ti ti-brain"></i>
+                </span>
+                <h4 class="m-0">Large Action Models</h4>
+              </div>
+              <p class="text-muted">
+                Ricerca e sviluppo di modelli AI avanzati in grado di comprendere e automatizzare azioni complesse in diversi contesti applicativi.
+              </p>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="d-flex align-items-center mb-3">
+                <span class="avatar avatar-md bg-green-lt me-3">
+                  <i class="ti ti-device-mobile"></i>
+                </span>
+                <h4 class="m-0">Interfacce Naturali</h4>
+              </div>
+              <p class="text-muted">
+                Sviluppo di interfacce utente intuitive che sfruttano il linguaggio naturale e i gesti per un'interazione più fluida con la tecnologia.
+              </p>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="d-flex align-items-center mb-3">
+                <span class="avatar avatar-md bg-blue-lt me-3">
+                  <i class="ti ti-shield-lock"></i>
+                </span>
+                <h4 class="m-0">Privacy e Sicurezza</h4>
+              </div>
+              <p class="text-muted">
+                Implementazione di tecnologie avanzate per garantire la privacy e la sicurezza dei dati degli utenti nei sistemi AI.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Timeline -->
+  <div class="row mt-4">
+    <div class="col-12">
+      <div class="card">
+        <div class="card-header">
+          <h3 class="card-title">Roadmap di sviluppo</h3>
+        </div>
+        <div class="card-body">
+          <ul class="timeline">
+            <li class="timeline-event">
+              <div class="timeline-event-icon bg-primary-lt">
+                <i class="ti ti-check"></i>
+              </div>
+              <div class="timeline-event-card card">
+                <div class="card-body">
+                  <div class="text-muted float-end">Q1 2026</div>
+                  <h4>Rilascio DaDoOS 1.0</h4>
+                  <p>Prima versione stabile del sistema operativo con supporto per dispositivi Android.</p>
+                </div>
+              </div>
+            </li>
+            <li class="timeline-event">
+              <div class="timeline-event-icon bg-primary-lt">
+                <i class="ti ti-clock"></i>
+              </div>
+              <div class="timeline-event-card card">
+                <div class="card-body">
+                  <div class="text-muted float-end">Q2 2026</div>
+                  <h4>Espansione LAM</h4>
+                  <p>Aggiornamento del Large Action Model con nuove capacità e supporto per più lingue.</p>
+                </div>
+              </div>
+            </li>
+            <li class="timeline-event">
+              <div class="timeline-event-icon bg-primary-lt">
+                <i class="ti ti-clock"></i>
+              </div>
+              <div class="timeline-event-card card">
+                <div class="card-body">
+                  <div class="text-muted float-end">Q3 2026</div>
+                  <h4>Ecosistema di sviluppatori</h4>
+                  <p>Lancio della piattaforma per sviluppatori con API e strumenti per creare applicazioni su DaDoOS.</p>
+                </div>
+              </div>
+            </li>
+            <li class="timeline-event">
+              <div class="timeline-event-icon bg-primary-lt">
+                <i class="ti ti-clock"></i>
+              </div>
+              <div class="timeline-event-card card">
+                <div class="card-body">
+                  <div class="text-muted float-end">Q4 2026</div>
+                  <h4>Nuovi dispositivi</h4>
+                  <p>Espansione della linea di prodotti hardware con nuovi dispositivi compatibili con DaDoOS.</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Get Involved -->
+  <div class="row mt-4">
+    <div class="col-12">
+      <div class="card bg-primary text-primary-fg">
+        <div class="card-body text-center p-5">
+          <h3 class="card-title text-primary-fg mb-3">Partecipa allo sviluppo</h3>
+          <p class="text-primary-fg fs-4 mb-4">
+            Sei interessato a contribuire ai nostri progetti open source o a collaborare con noi?
+          </p>
+          <div class="d-flex flex-column flex-md-row justify-content-center gap-3">
+            <a href="https://github.com/doda-e-agency/" target="_blank" class="btn btn-lg btn-primary-lt">
+              <i class="ti ti-brand-github me-2"></i> GitHub
+            </a>
+            <a href="#contact-form" class="btn btn-lg btn-white">Contattaci</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Contact Form -->
+  <div class="row mt-4">
+    <div class="col-12">
+      <div class="card">
+        <div class="card-header">
+          <h3 class="card-title" id="contact-form">Contattaci</h3>
+        </div>
+        <div class="card-body">
+          <form>
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label class="form-label">Nome</label>
+                <input type="text" class="form-control" placeholder="Il tuo nome" required>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label class="form-label">Email</label>
+                <input type="email" class="form-control" placeholder="La tua email" required>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label class="form-label">Oggetto</label>
+                <input type="text" class="form-control" placeholder="Oggetto del messaggio" required>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label class="form-label">Progetto di interesse</label>
+                <select class="form-select">
+                  <option value="">Seleziona un progetto</option>
+                  <option value="DaDoOS">DaDoOS</option>
+                  <option value="LAM">Large Action Model</option>
+                  <option value="R1">Rabbit R1</option>
+                  <option value="other">Altro</option>
+                </select>
+              </div>
+              <div class="col-12 mb-3">
+                <label class="form-label">Messaggio</label>
+                <textarea class="form-control" rows="5" placeholder="Il tuo messaggio" required></textarea>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-primary">Invia messaggio</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Load current projects from JSON
+    fetch('{{ "../_data/projects/it_current-projects.json" | relative_url }}')
+      .then(response => response.json())
+      .then(data => {
+        const projectsContainer = document.getElementById('current-projects');
+        
+        data.forEach(project => {
+          const projectCard = document.createElement('div');
+          projectCard.className = 'col-md-6 col-lg-4 mb-4';
+          projectCard.dataset.category = project.category || 'other';
+          
+          let progressHtml = '';
+          if (project.progress) {
+            progressHtml = `
+              <div class="mt-3">
+                <div class="d-flex mb-1">
+                  <div>${project.progress}% Completato</div>
+                  <div class="ms-auto">
+                    <span class="text-muted">${project.status || 'In Corso'}</span>
+                  </div>
+                </div>
+                <div class="progress progress-sm">
+                  <div class="progress-bar bg-primary" style="width: ${project.progress}%" role="progressbar" aria-valuenow="${project.progress}" aria-valuemin="0" aria-valuemax="100" aria-label="${project.progress}% Completato">
+                    <span class="visually-hidden">${project.progress}% Completato</span>
+                  </div>
+                </div>
+              </div>
+            `;
+          }
+          
+          projectCard.innerHTML = `
+            <div class="card">
+              <div class="card-img-top img-responsive img-responsive-21by9" style="background-image: url({{ '/assets/images/projects/' | relative_url }}${project.image || 'default-project.jpg'})"></div>
+              <div class="card-body">
+                <div class="d-flex align-items-center mb-3">
+                  <span class="badge bg-${project.badge_color || 'primary'} me-2">${project.category || 'Progetto'}</span>
+                  <span class="text-muted">${project.year || '2025'}</span>
+                </div>
+                <h3 class="card-title">${project.name}</h3>
+                <p class="text-muted">${project.description}</p>
+                ${progressHtml}
+                <div class="mt-4">
+                  <div class="row">
+                    <div class="col">
+                      <div class="d-flex align-items-center">
+                        <div class="avatar-list avatar-list-stacked">
+                          ${(project.team || []).map(member => `
+                            <span class="avatar avatar-xs rounded" style="background-image: url({{ '/assets/images/team/' | relative_url }}${member.image || 'default-avatar.jpg'})"></span>
+                          `).join('')}
+                        </div>
+                        <div class="ms-2">${project.team ? project.team.length : 0} Contributori</div>
+                      </div>
+                    </div>
+                    <div class="col-auto">
+                      <a href="${project.url || '#'}" class="btn btn-primary">
+                        Visualizza Dettagli
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          `;
+          
+          projectsContainer.appendChild(projectCard);
+        });
+        
+        // Initialize search and filter functionality
+        const searchInput = document.getElementById('project-search');
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        
+        if (searchInput) {
+          searchInput.addEventListener('input', function() {
+            const searchTerm = this.value.toLowerCase();
+            const projects = document.querySelectorAll('#current-projects > div');
+            
+            projects.forEach(project => {
+              const title = project.querySelector('.card-title').textContent.toLowerCase();
+              const description = project.querySelector('.text-muted').textContent.toLowerCase();
+              
+              if (title.includes(searchTerm) || description.includes(searchTerm)) {
+                project.style.display = '';
+              } else {
+                project.style.display = 'none';
+              }
+            });
+          });
+        }
+        
+        if (filterButtons) {
+          filterButtons.forEach(button => {
+            button.addEventListener('click', function(e) {
+              e.preventDefault();
+              const filter = this.dataset.filter;
+              const projects = document.querySelectorAll('#current-projects > div');
+              
+              projects.forEach(project => {
+                if (filter === 'all' || project.dataset.category === filter) {
+                  project.style.display = '';
+                } else {
+                  project.style.display = 'none';
+                }
+              });
+            });
+          });
+        }
+      })
+      .catch(error => {
+        console.error('Error loading projects:', error);
+        document.getElementById('current-projects').innerHTML = '<div class="col-12"><div class="alert alert-danger">Errore nel caricamento dei progetti. Riprova più tardi.</div></div>';
+      });
+  });
+</script>

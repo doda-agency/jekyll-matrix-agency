@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="{% if page.lang %}{{ page.lang }}{% else %}{{ site.default_lang }}{% endif %}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+  
+  <!-- Meta tags for SEO -->
+  <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+  <meta name="keywords" content="{% if page.keywords %}{{ page.keywords }}{% else %}DoDa e-Agency, DaDoOS, AI, intelligenza artificiale, sistema operativo, Open Source, LAM, Large Action Model{% endif %}">
+  <meta name="author" content="DoDa e-Agency Team">
+  <meta property="og:title" content="{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}">
+  <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  <meta property="og:image" content="{{ site.url }}/assets/images/logo/logo.png">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="{{ '/assets/images/logo/favicon.ico' | relative_url }}">
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/images/logo/logo.png' | relative_url }}">
+  
+  <!-- Tabler Core CSS -->
+  <link rel="stylesheet" href="{{ site.tabler_css }}">
+  <!-- Tabler Icons -->
+  <link rel="stylesheet" href="{{ site.tabler_icons_css }}">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
+  
+  {% if page.extra_css %}
+    {% for css in page.extra_css %}
+      <link rel="stylesheet" href="{{ css | relative_url }}">
+    {% endfor %}
+  {% endif %}
+</head>
+<body>
+  <div class="page">
+    {% include header.html %}
+    
+    {% include navbar.html %}
+    
+    {{ content }}
+    
+    {% include footer.html %}
+  </div>
+  
+  <!-- Tabler Core JS -->
+  <script src="{{ site.tabler_js }}"></script>
+  <!-- Twitter Widgets JS -->
+  <script async src="{{ site.twitter_widgets_js }}"></script>
+  <!-- Custom JS -->
+  <script src="{{ '/assets/js/custom.js' | relative_url }}"></script>
+  
+  {% if page.extra_js %}
+    {% for js in page.extra_js %}
+      <script src="{{ js | relative_url }}"></script>
+    {% endfor %}
+  {% endif %}
+</body>
+</html>

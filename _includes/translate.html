@@ -1,0 +1,19 @@
+{% comment %}
+  Include for translating content based on the current language
+  
+  Usage:
+  {% include translate.html key="path.to.translation.key" %}
+  
+  Example:
+  {% include translate.html key="navigation.home" %}
+{% endcomment %}
+
+{% assign translations = site.data.translations[page.lang] %}
+{% assign keys = include.key | split: "." %}
+
+{% assign value = translations %}
+{% for key in keys %}
+  {% assign value = value[key] %}
+{% endfor %}
+
+{{ value }}
