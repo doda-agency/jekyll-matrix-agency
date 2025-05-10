@@ -6,99 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     window.Tabler.init();
   }
   
-  async function loadProjects(dataFile, containerId, type) {
-    try {
-      // Update path to use Jekyll's relative_url filter syntax
-      const response = await fetch("{{ site.baseurl }}" + dataFile);
-      if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
-      }
-      const projects = await response.json();
-      
-      const container = document.getElementById(containerId);
-      if (container) {
-        renderProjects(projects, container, type);
-      }
-    } catch (error) {
-      console.error('Error loading project data:', error);
-    }
-  }
-  
-  function renderProjects(projects, container, type) {
-    container.innerHTML = '';
-    
-    projects.forEach(project => {
-      const projectCard = document.createElement('div');
-      projectCard.className = 'col-md-6 col-lg-4 project-card';
-      
-      // Update image path to use Jekyll's relative_url filter syntax
-      const imageUrl = project.image || '{{ "/assets/images/projects/placeholder.png" | relative_url }}';
-      const projectUrl = project.url || '#';
-      const progress = project.progress || 0;
-      
-      if (type === 'featured') {
-        // Markup per featured-projects
-        projectCard.innerHTML = `
-          <div class="card">
-            <div class="card-img-top img-responsive img-responsive-16by9" style="background-image: url(${imageUrl})"></div>
-            <div class="card-body">
-              <h3 class="card-title">${project.name}</h3>
-              <p class="text-muted">${project.description}</p>
-            </div>
-            <div class="card-footer">
-              <a href="${projectUrl}" class="btn btn-primary" target="_blank">Vai al progetto</a>
-            </div>
-          </div>
-        `;
-      } else if (type === 'current') {
-        // Markup per current-projects, includendo la barra di progresso
-        projectCard.innerHTML = `
-          <div class="card">
-            <div class="card-img-top img-responsive img-responsive-16by9" style="background-image: url(${imageUrl})"></div>
-            <div class="card-body">
-              <h3 class="card-title">${project.name}</h3>
-              <p class="text-muted">${project.description}</p>
-              <div class="progress" style="height: 20px; margin-top: 10px;">
-                <div class="progress-bar" role="progressbar" style="width: ${progress}%" aria-valuenow="${progress}" aria-valuemin="0" aria-valuemax="100">
-                  ${progress}%
-                </div>
-              </div>
-            </div>
-            <div class="card-footer">
-              <a href="${projectUrl}" class="btn btn-primary" target="_blank">Vai al progetto</a>
-            </div>
-          </div>
-        `;
-      } else {
-        // Default markup se vuoi gestire altri casi
-        projectCard.innerHTML = `
-          <div class="card">
-            <div class="card-img-top img-responsive img-responsive-16by9" style="background-image: url(${imageUrl})"></div>
-            <div class="card-body">
-              <h3 class="card-title">${project.name}</h3>
-              <p class="text-muted">${project.description}</p>
-            </div>
-            <div class="card-footer">
-              <a href="${projectUrl}" class="btn btn-primary" target="_blank">Vai al progetto</a>
-            </div>
-          </div>
-        `;
-      }
-      
-      container.appendChild(projectCard);
-    });
-  }
-  
-  if (document.getElementById('featured-projects')) {
-    // Update path to use Jekyll's data structure
-    loadProjects('{{ site.baseurl }}/data/it.portfolio-projects.json', 'featured-projects', 'featured');
-  }
-  
-  if (document.getElementById('current-projects')) {
-    // Update path to use Jekyll's data structure
-    loadProjects('{{ site.baseurl }}/data/it.current-projects.json', 'current-projects', 'current');
-  }
-  
+  // Smooth scrolling for anchor links
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
       e.preventDefault();
@@ -111,4 +19,44 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
   });
+  
+  // Initialize any other custom functionality
+  initializeContactForm();
 });
+
+// Contact form handling
+function initializeContactForm() {
+  const contactForm = document.getElementById('contact-form');
+  if (contactForm) {
+    contactForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      // In a real implementation, you would send the form data to a server
+      // For now, we'll just show a success message
+      const formData = new FormData(contactForm);
+      let formValues = {};
+      
+      for (let [key, value] of formData.entries()) {
+        formValues[key] = value;
+      }
+      
+      console.log('Form submitted:', formValues);
+      
+      // Show success message
+      const formFooter = contactForm.querySelector('.form-footer');
+      const successMessage = document.createElement('div');
+      successMessage.className = 'alert alert-success mt-3';
+      successMessage.textContent = 'Message sent successfully!';
+      
+      formFooter.appendChild(successMessage);
+      
+      // Reset form
+      contactForm.reset();
+      
+      // Remove success message after 3 seconds
+      setTimeout(() => {
+        successMessage.remove();
+      }, 3000);
+    });
+  }
+}
