@@ -6,7 +6,6 @@ author: "Site Admin"
 categories: [Jekyll, Tabler]
 tags: [getting-started, tutorial]
 description: "Learn how to use Jekyll with Tabler.io UI components"
-lang: it
 ---
 
 ## Introduction to Jekyll with Tabler.io
