@@ -209,7 +209,7 @@ lang: en
 <script>
   document.addEventListener('DOMContentLoaded', function() {
     // Load current projects from JSON
-    fetch('{{ "/_data/projects/en_current-projects.json" | relative_url }}')
+    fetch('{{ "en/current-projects.json" | relative_url }}')
       .then(response => response.json())
       .then(data => {
         const projectsContainer = document.getElementById('current-projects');
