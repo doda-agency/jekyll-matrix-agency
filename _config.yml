@@ -32,7 +32,7 @@ collections:
 
 # Multilingual settings
 languages: ["it", "en"]
-default_lang: "it"
+default_lang: "en"
 exclude_from_localization: ["assets", "images", "css", "js", "fonts"]
 parallel_localization: true
 
