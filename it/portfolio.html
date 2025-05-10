@@ -257,7 +257,7 @@ lang: it
 <script>
   document.addEventListener('DOMContentLoaded', function() {
     // Load portfolio projects from JSON
-    fetch('{{ "/_data/projects/it/portfolio-projects.json" | relative_url }}')
+    fetch('{{ "/it/portfolio-projects.json" | relative_url }}')
       .then(response => response.json())
       .then(data => {
         const projectsContainer = document.getElementById('featured-projects');
